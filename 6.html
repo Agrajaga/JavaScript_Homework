@@ -27,7 +27,7 @@ console.log(declinationOfNumber(5, "стул", "стула", "стульев"));
 
   function declinationOfNumber(count, one, two, five) {
     let units = count % 10;
-    let dozens = (count % 100 - units) / 10;
+    let dozens = Math.trunc(count / 10) % 10;
     if (dozens !== 1) {
       switch (units) {
         case 1 :
