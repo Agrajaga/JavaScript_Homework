@@ -1,0 +1,1 @@
+# Basic JavaScript course homework
