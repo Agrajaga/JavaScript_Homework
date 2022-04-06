@@ -27,10 +27,11 @@
 -->
 <script>
   "use strict";
-  const number = prompt("Введите положительное целое число");
-  let units = number % 10;
-  let dozens = (number % 100 - units) / 10;
-  let hundreds = (number % 1000 - dozens * 10 - units) / 100;
+
+  const number = +prompt("Введите положительное целое число");
+  const units = number % 10;
+  const dozens = (number % 100 - units) / 10;
+  const hundreds = (number % 1000 - dozens * 10 - units) / 100;
   alert(`В числе ${number} количество сотен: ${hundreds}, десятков: ${dozens}, единиц: ${units}`);
 </script>
 </body>
